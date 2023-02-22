@@ -5,9 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class msg {
-@GetMapping("/")
-	public Integer remote()
-	{
-		return 1+4;
-	}
+@GetMapping("/hello")
+public String msgw() {
+	return "Hello World!";
+}
 }
